@@ -1,4 +1,9 @@
-public class Fibonacci {
+/*
+  Time Complexity: O(n) 
+  Space Complexity: O(n) 
+ */
+public class FibonacciSequence {
+
     static int[] generateFib(int n) {
         int[] fib = new int[n];
         if (n >= 1) fib[0] = 0;
@@ -10,11 +15,13 @@ public class Fibonacci {
     }
 
     public static void main(String[] args) {
-        int n = 5;
+        int n = 10;
         int[] result = generateFib(n);
         System.out.print("First " + n + " Fibonacci numbers: ");
         for (int num : result) {
             System.out.print(num + " ");
         }
-    }
+    
 }
+
+} 

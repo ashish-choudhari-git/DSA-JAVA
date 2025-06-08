@@ -1,7 +1,12 @@
-
 /*
-PS:GFG
-*/
+  Problem: Chocolate Distribution Problem
+  Description: Given an array of n integers where each value represents the number of chocolates in a packet.
+               Each packet can have a variable number of chocolates. There are m students, the task is to
+               distribute chocolate packets such that:
+               1. Each student gets one packet
+               2. The difference between the number of chocolates in the packet with maximum chocolates and
+                  the packet with minimum chocolates given to the students is minimum.
+ */
 import java.util.Arrays;
 
 public class ChocolateDistributionProblem {
@@ -17,11 +22,9 @@ public class ChocolateDistributionProblem {
             if (i == 0 || diff < minDiff) {
                 minDiff = diff;
             }
-
         }
 
         return minDiff;
-
     }
 
     public static void main(String[] args) {
@@ -31,3 +34,5 @@ public class ChocolateDistributionProblem {
         System.out.println("Minimum difference is: " + sol.minDiff(arr, n));
     }
 }
+/* Time Complexity: O(n log n)
+ Space Complexity: O(1) */

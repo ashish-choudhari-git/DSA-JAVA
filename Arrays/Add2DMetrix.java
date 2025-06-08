@@ -11,10 +11,11 @@ public class Add2DMetrix {
                 sum[i][j] = first[i][j] + second[i][j];
             }
         }
+        
         System.out.println("Sum of two 2D arrays:");
         for(int i=0;i < sum.length;i++){
             for(int j=0;j < sum[i].length;j++){
-                System.out.print(sum[i][j] + " ");
+                System.out.print(sum[i][j] + " ");  
             }
             System.out.println();
         }
