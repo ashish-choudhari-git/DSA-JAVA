@@ -7,7 +7,7 @@ Output:[3, 4]
 */
 public class RepeatandMissingNumber {
 
-    public int[] repeatedNumber(final int[] A) {
+    static int[] repeatedNumber( int[] A) {
         int n = A.length;
         int repeated = -1;
         int missing = -1;
@@ -16,13 +16,12 @@ public class RepeatandMissingNumber {
         for (int i = 0; i < n; i++) {
             nums[i] = A[i];
         }
+
         for (int i = 0; i < n; i++) {
             int index = Math.abs(nums[i]) - 1;
             if (nums[index] < 0) {
-           
                 repeated = Math.abs(nums[i]);
             } else {
-              
                 nums[index] = -nums[index];
             }
         }
@@ -30,13 +29,19 @@ public class RepeatandMissingNumber {
      
         for (int i = 0; i < n; i++) {
             if (nums[i] > 0) {
-            
                 missing = i + 1;
                 break;
             }
         }
 
         return new int[]{repeated, missing};
+    }
+    public static void main(String[] args) {
+        int[] arr ={1,3,4,2,2};
+        int[] res = repeatedNumber(arr);
+        for(int e : res){
+            System.out.println(e);
+        }
     }
 }
 

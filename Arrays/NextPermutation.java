@@ -22,6 +22,7 @@ public class NextPermutation {
             return;
         }
         int justGreater = -1;
+        
         for (int i = n - 1; i > index; i--) {
             if (nums[i] > nums[index]) {
                 justGreater = i;
