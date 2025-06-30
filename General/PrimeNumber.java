@@ -9,6 +9,7 @@ public class PrimeNumber {
             return false;
         }
         int c = 2;
+        
         while (c * c <= a) {
             if (a % c == 0) {
                 return false;

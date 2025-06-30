@@ -1,8 +1,8 @@
 /*
   Problem: Array Reversal
   Description: Reverse the elements of an array in-place. This file demonstrates four different approaches:
-               1. Using two-pointer technique with for loop
-               2. Using two-pointer technique with while loop
+               1. Using two-pointer technique with for loop-ne   //best
+               2. Using two-pointer technique with while loop    //best
                3. Using temporary array (naive approach)
                4. Using Collections.reverse() for ArrayList
              
