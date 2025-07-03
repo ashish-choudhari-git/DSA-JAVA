@@ -5,8 +5,7 @@ public class FindNumbersWithEvenNumberOfDigits {
         
         for (int num : nums) {
             int digits = 0;
-
-
+            
             while (num > 0) {
                 num /= 10;
                 digits++;
