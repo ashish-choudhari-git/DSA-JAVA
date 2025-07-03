@@ -3,7 +3,7 @@ public class Anagram {
         if (s.length() != t.length()) {
             return false;
         }
-        int[] count = new int[26]; //ASCII valeu will be stored
+        int[] count = new int[26]; //ASCII value will be stored
 
         for (int i = 0; i < s.length(); i++) {
             count[s.charAt(i) - 'a']++;   //go to any index between 0 to 25 increment count by one
