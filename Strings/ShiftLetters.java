@@ -43,7 +43,7 @@ public class ShiftLetters {
         return new String(result);
     }
 
-    private char shiftChar(char c, int shift) {
-        return (char) ((c - 'a' + shift) % 26 + 'a'); // c is 99 in ascii avlue ,when we minus a (which is 97) , we get 3. hence,we converted char to int ,then we add shift ,then reverse to char by adding 'a'
+     char shiftChar(char c, int shift) {
+        return (char) ((c - 'a' + shift)+ 'a'); // c is 99 in ascii Value ,when we minus 'a'(which is 97) , we get 3. hence,we converted char to int ,then we add shift ,then reverse to char by adding 'a'
     }
 }
