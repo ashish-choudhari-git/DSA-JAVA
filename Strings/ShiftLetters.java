@@ -24,13 +24,11 @@ public class ShiftLetters {
     public static void main(String[] args) {
         String s = "abc";
         int[] shifts = {3, 5, 9};
-
-        ShiftLetters obj = new ShiftLetters();
-        String result = obj.shiftingLetters(s, shifts);
+        String result = shiftingLetters(s, shifts);
         System.out.println("Output: " + result); 
     }
 
-    public String shiftingLetters(String s, int[] shifts) {
+    static String shiftingLetters(String s, int[] shifts) {
         int n = s.length();
         long totalShift = 0;
         char[] result = new char[n];
@@ -40,10 +38,10 @@ public class ShiftLetters {
             result[i] = shiftChar(s.charAt(i), (int) totalShift);
         }
 
-        return new String(result);
+        return new String(result);// character array to string 
     }
 
-     char shiftChar(char c, int shift) {
+    static char shiftChar(char c, int shift) {
         return (char) ((c - 'a' + shift)+ 'a'); // c is 99 in ascii Value ,when we minus 'a'(which is 97) , we get 3. hence,we converted char to int ,then we add shift ,then reverse to char by adding 'a'
     }
 }

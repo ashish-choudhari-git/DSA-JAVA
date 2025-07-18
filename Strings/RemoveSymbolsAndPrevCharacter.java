@@ -39,3 +39,23 @@ public class RemoveSymbolsAndPrevCharacter {
     }
 
 }
+
+// for removing next letter 
+// while (i < s.length()) {
+//             char ch = s.charAt(i);
+
+//             if (ch == '*') {
+//                 // Push the star, we’ll handle it on the next character
+//                 stack.push(ch);
+//                 i++;
+//             } else {
+//                 // If top of the stack is '*', remove the '*' and skip this char
+//                 if (!stack.isEmpty() && stack.peek() == '*') {
+//                             stack.pop();  // remove '*'
+//                             i++;          // skip current char afte *
+//                         } else {
+//                             stack.push(ch);
+//                             i++;
+//                         }
+//                   }
+//         }
