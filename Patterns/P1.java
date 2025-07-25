@@ -1,7 +1,7 @@
 public class P1 {
     public static void main(String[] args) {
 
-/*
+/*        (1)
 *
 * *
 * * *
@@ -16,7 +16,7 @@ public class P1 {
     
 
 
-/*
+/*         (2)
 * * * * 
 * * * 
 * * 
@@ -30,7 +30,7 @@ public class P1 {
         //     System.out.println();
         // }
 
-/*
+/*         (3)
  1
  12
  123
@@ -43,7 +43,7 @@ public class P1 {
         //     System.out.println();
         // }
 
-/*
+/*         (4)
  A
  BC
  DEF
@@ -60,7 +60,7 @@ public class P1 {
         // }
 
 
-/*
+/*         (5)
 * * * * *
 *       *
 *       * 
@@ -81,7 +81,7 @@ public class P1 {
         //     System.out.println();
         // }
 
-/*
+/*         (6)
     *
    **
   ***
@@ -100,7 +100,7 @@ public class P1 {
         //     System.out.println();
         // }
 
-/*
+/*         (7)
 12345
 1234
 123
@@ -117,7 +117,7 @@ public class P1 {
         //     System.out.println();
         // }
 
-/*
+/*         (8)
 1
 2 3
 4 5 6
@@ -135,7 +135,7 @@ public class P1 {
         //     System.out.println();
         // }
 
-/*
+/*         (9)
 1
 01
 010
@@ -154,7 +154,7 @@ public class P1 {
         //     System.out.println();
         // }
 
-/*
+/*         (10)
 *      *
 **    **
 ***  ***
@@ -201,7 +201,7 @@ public class P1 {
         //     System.out.println();
         // }
 
-/*
+/*         (11)
 Solid rhombus
     *****
    *****
@@ -225,7 +225,7 @@ Solid rhombus
         //     System.out.println();
         // }
 
-        /*
+/*          (12)
 Solid rhombus
     *****
    *   *
