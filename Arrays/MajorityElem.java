@@ -11,7 +11,7 @@ Input: nums = [2,2,1,1,1,2,2]
 Output: 2 */
 
 
-public class MajorityElement {
+public class MajorityElem {
     static int majorityElement(int[] nums) {
         
         int count =0;
