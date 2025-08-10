@@ -67,7 +67,6 @@ public class MultiplyStrings {
 
         for (int i = num1.length() - 1; i >= 0; i--) {
             int carry = 0;
-            int innerPlace = 0;
             int first = num1.charAt(i) - '0';
             StringBuilder result = new StringBuilder();
 

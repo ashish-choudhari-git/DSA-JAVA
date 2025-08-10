@@ -1,10 +1,8 @@
-import java.util.Arrays;
+// import java.util.Arrays;
 public class PrefixSum {
 //Time complexity - O(n) and SC :O(N) 
     public static void main(String[] args) {
-        int arr[] = {8,6,4,3,6,0,7};
-
-        a
+        // int arr[] = {8,6,4,3,6,0,7};
     }
 
     
