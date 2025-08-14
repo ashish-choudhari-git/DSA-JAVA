@@ -6,7 +6,8 @@ Output: "100"
 
 Example 2:
 Input: a = "1010", b = "1011"
-Output: "10101" */
+Output: "10101" 
+*/
 
 public class AddBinary {
     public String addBinary(String a, String b) {
