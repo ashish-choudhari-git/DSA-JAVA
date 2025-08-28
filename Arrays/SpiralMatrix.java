@@ -16,41 +16,85 @@ import java.util.List;
 
 public class SpiralMatrix {
      public List<Integer> spiralOrder(int[][] matrix) {
+        // List<Integer> ans = new ArrayList<>();
+
+        // int top = 0;
+        // int bottom = matrix.length - 1;
+        // int left = 0;
+        // int right = matrix[0].length - 1;
+
+        // while (top <= bottom && left <= right) {
+        //     //left to right
+        //     for (int i = left; i <= right; i++) {
+        //         ans.add(matrix[top][i]);
+        //     }
+        //     top++;
+
+        //     // top to bottom
+        //     for (int i = top; i <= bottom; i++) {
+        //         ans.add(matrix[i][right]);
+        //     }
+        //     right--;
+
+        //     if (left <= right && top <= bottom) {
+        //         //right to left
+        //         for (int i = right; i >= left; i--) {
+        //             ans.add(matrix[bottom][i]);
+        //         }
+        //         bottom--;
+        //     }
+
+        //     if (top <= bottom && left <= right) {
+        //         for (int i = bottom; i >= top; i--) {
+        //             ans.add(matrix[i][left]);
+        //         }
+        //         left++;
+        //     }
+
+        // }
+
+        // return ans;
+
+
+
         List<Integer> ans = new ArrayList<>();
 
-        int t = 0;
-        int b = matrix.length - 1;
-        int l = 0;
-        int r = matrix[0].length - 1;
+        int startRow = 0;
+        int startCol = 0;
+        int endRow = matrix.length - 1;
+        int endCol = matrix[0].length - 1;
 
-        while (t <= b && l <= r) {
-            //left to right
-            for (int i = l; i <= r; i++) {
-                ans.add(matrix[t][i]);
+        while (startRow <= endCol && startCol <= endCol) {
+            //left to right 
+            for(int j=startCol;j<= endCol;j++){
+                ans.add(matrix[startRow][j]);
             }
-            t++;
 
-            // top to bottom
-            for (int i = t; i <= b; i++) {
-                ans.add(matrix[i][r]);
+            //top to bottom
+            for(int i=startRow+1;i<= endRow;i++){
+                ans.add(matrix[i][endCol]);
             }
-            r--;
 
-            if (l <= r && t <= b) {
-                //right to left
-                for (int i = r; i >= l; i--) {
-                    ans.add(matrix[b][i]);
+            //bottom right to left
+            for(int j=endCol-1;j>=startCol;j--){
+                if(startRow==endRow){
+                    break;
                 }
-                b--;
+                ans.add(matrix[endRow][j]);
             }
 
-            if (t <= b && l <= r) {
-                for (int i = b; i >= t; i--) {
-                    ans.add(matrix[i][l]);
+            //bottom to top
+            for(int i=endRow-1;i>= startRow+1;i--){
+                if(startCol==endCol){
+                    break;
                 }
-                l++;
+                ans.add(matrix[i][startCol]);
             }
 
+            startRow++;
+            startCol++;
+            endRow--;
+            endCol--;
         }
 
         return ans;

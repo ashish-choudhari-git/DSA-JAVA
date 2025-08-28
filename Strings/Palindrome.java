@@ -20,11 +20,19 @@ class Palindrome {
             back--;
         }
 
-        return true;
-    }
+            // int n= s.length();
+            // for(int i=0; i<n;i++){
+            //     if(s.charAt(i)!= s.charAt(n-1-i)){
+            //         return false;
+            //     }
+            // }
+            return true;
+        }
     public static void main(String[] args) {
         String s ="ashish, you;;; uoy ,,hsihsa ";
         System.out.println(isPalindrome(s));
     }
 }
+        
+    
 /* t-O(n) */
