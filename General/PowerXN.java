@@ -20,7 +20,7 @@ class PowerXN {
     public double myPow(double x, int n) {
         //return Math.pow(x,n)
         if (n < 0) {
-            return 1 / calc(x, - n); 
+            return 1 / calc(x,n); 
         } else {
             return calc(x, n);
         }
@@ -38,4 +38,23 @@ class PowerXN {
             return half * half * x; //power even * power 1 => odd power
         }
     }
+
+    //more optimized
+    // static int calc(int a,int n){
+    //     int ans = 1;
+
+    //     while(n>0){
+    //         if((n&1) !=0 ){
+    //             ans = ans * a;
+    //         }
+    //         a =a *a;
+    //         n= n>>1;
+    //     }
+
+    //     return ans;
+    // }
+
+    // public static void main(String[] args) {
+    //     System.out.println(calc(15,2));
+    // }
 }
